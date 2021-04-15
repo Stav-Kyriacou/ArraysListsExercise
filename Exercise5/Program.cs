@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Exercise5
 {
@@ -20,7 +21,15 @@ namespace Exercise5
                     words.Add(input);
                 }
             }
-            Console.WriteLine("Stopped");
+
+            Console.WriteLine("-------------------");
+
+            words.Reverse();
+
+            foreach (string item in words)
+            {
+                Console.WriteLine(item);                
+            }
         }
     }
 }
