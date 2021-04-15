@@ -11,12 +11,12 @@ namespace Exercise5
             List<string> words = new List<string>();
             string input = "";
             
-            while(input != "stop")
+            while(input != "stop")                                  //keep asking for a word until "stop" is typed
             {
-                Console.Write("Enter a word: ");
+                Console.Write("Enter a word: ");                    //get user input
                 input = Console.ReadLine();
 
-                if(input != "stop")
+                if(input != "stop")                                 //only add to the list if word is not "stop"
                 {
                     words.Add(input);
                 }
@@ -24,9 +24,9 @@ namespace Exercise5
 
             Console.WriteLine("-------------------");
 
-            words.Reverse();
+            words.Reverse();                                        //reverse order of list
 
-            foreach (string item in words)
+            foreach (string item in words)                          //output every word in the list
             {
                 Console.WriteLine(item);                
             }
