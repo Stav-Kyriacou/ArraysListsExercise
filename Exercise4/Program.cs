@@ -10,9 +10,8 @@ namespace Exercise4
             //Exercise 4
             List<int> numbers = new List<int>();
             int repeatedAmount = 0;
-            int numLoops = 5;
 
-            for (int i = 0; i < numLoops; i++)                                                      //get user input a specific number of times. Add each input to a list
+            for (int i = 0; i < 5; i++)                                                             //get user input a specific number of times. Add each input to a list
             {
                 Console.Write("Enter a number: ");
                 numbers.Add(int.Parse(Console.ReadLine()));
@@ -30,7 +29,7 @@ namespace Exercise4
                 }
             }
 
-            Console.WriteLine("The number {0} was repeated {1} time(s)", input, repeatAmount);      //write how many times the number was repeated
+            Console.WriteLine("The number {0} was repeated {1} time(s)", input, repeatedAmount);      //write how many times the number was repeated
         }
     }
 }

@@ -9,9 +9,8 @@ namespace Exercise3
         {
             //Exercise 3
             List<int> numbers = new List<int>();
-            int numLoops = 5;
 
-            for (int i = 0; i < numLoops; i++)                                              //ask for a number a specific amount of times, add each to a list
+            for (int i = 0; i < 5; i++)                                                     //ask for a number a specific amount of times, add each to a list
             {
                 Console.Write("Enter a number: ");
                 numbers.Add(int.Parse(Console.ReadLine()));
